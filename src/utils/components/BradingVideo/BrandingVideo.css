@@ -1,0 +1,22 @@
+.bv-container .container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: visible !important;
+}
+.bv-video {
+  width: 95% !important;
+  border-radius: 4rem !important;
+  margin-top: -10rem !important;
+  z-index: 1 !important;
+}
+@media (max-width: 1024px) {
+  .bv-video {
+    margin-top: 1rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .bv-video {
+    border-radius: 2rem !important;
+  }
+}
