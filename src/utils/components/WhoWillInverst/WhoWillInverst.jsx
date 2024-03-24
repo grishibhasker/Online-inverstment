@@ -1,4 +1,6 @@
+// WhoWillInverst.jsx
 import React from "react";
+import Image from "next/image"; // Import Image from next/image
 import "./WhoWillInverst.css";
 import { whoWeInvest } from "../../data";
 import { motion } from "framer-motion";
@@ -7,6 +9,7 @@ import {
   tagVariants,
   titleVariants,
 } from "../../animations";
+
 const WhoWillInverst = () => {
   return (
     <div className="wwi-wrapper">
@@ -42,6 +45,7 @@ const WhoWillInverst = () => {
                   whileInView={"onscreen"}
                   variants={containerVariants(i * 0.05 + 1)}
                   className="wwi-feature"
+                  key={i} // Add a unique "key" prop here
                 >
                   <span className="des">{feature.title}</span>
                   <span className="text">{feature.des}</span>
